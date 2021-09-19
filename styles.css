@@ -1,0 +1,38 @@
+strong {
+  color: blue;
+}
+img {
+  width: 200px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.username {
+  font-weight: bold;
+}
+video {
+  width: 500px;
+  border-radius: 10px;
+  margin-block: 50px;
+}
+.BusinessFoundation {
+  font-weight: bold;
+}
+.MH {
+  color: green;
+}
+.BusinessCredit {
+  font-weight: bold;
+}
+.PersonalCredit {
+  font-weight: bold;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-color: grey;
+}
+h1 {
+  background-color: indigo;
+}
