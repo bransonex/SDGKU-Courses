@@ -4,28 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Session 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tomogatchi Pet</title>
   </head>
   <body>
-    <header>
-      <h1>Simple Calculator JS</h1>
-    </header>
-    <main>
-      <div>
-        <ol>
-          <li>Click on the button below.</li>
-          <li>You will get two input prompts.</li>
-          <li>Input any two numbers.</li>
-          <li>Afterwards it will display the four operations</li>
-        </ol>
+    <div class="character-container">
+      <div class="img-container">
+        <img src="img/psyduck.png" alt="PsyDuck" />
       </div>
-      <div>
-        <button onclick="calculator();">Click here!</button>
-        <div id="results"><p>All the results will be displayed here!</p></div>
+      <div class="var-container">
+        <!--hungry,happiness,energy-->
+        <p>Hunger: <span id="petHunger"> 0</span></p>
+        <p>Happiness:</p>
+        <p>Energy:</p>
       </div>
-      <div></div>
-    </main>
-    <footer>All the copyrights &copy; reserved 2021 by Cohort 23</footer>
-    <script src="calculator.js"></script>
+      <div class="icons-container">
+        <!--feed, pet, play-->
+        <button id="feedBtn"></button>
+        <button id="petBtn"></button>
+        <button id="playBtn"></button>
+      </div>
+    </div>
   </body>
 </html>
