@@ -4,17 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do App</title>
-    <link rel="stylesheet" href="./app.css" />
+    <title>My Task Manager</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
   </head>
   <body>
-    <h1>My Super To Do</h1>
+    <div class="navbar"></div>
+    <h1>Welcome to your task manager</h1>
 
-    <div class="capture">
-      <label for="">Create New To Do's</label>
-      <input type="text" placeholder="To Do" />
-      <button>Save</button>
+    <div class="container">
+      <section id="section-list">
+        <h3>Your current task</h3>
+      </section>
+
+      <section id="section-form">
+        <h3>Register new task</h3>
+
+        <div class="form">
+          <div class="control">
+            <label class="form-label">Title:</label>
+            <input id="txtTitle" type="text" class="form-control" />
+          </div>
+
+          <div class="control">
+            <label class="form-label">Important:</label>
+            <i id="iImportant" class="far fa-star"></i>
+          </div>
+
+          <div class="control">
+            <label class="form-label">Description:</label>
+            <input id="txtDescription" type="text" class="form-control" />
+          </div>
+          <div class="control">
+            <label class="form-label">Due Date:</label>
+            <input id="txtDate" type="datetime-local" class="form-control" />
+          </div>
+          <div class="control">
+            <label class="form-label">Location:</label>
+            <input id="txtLocation" type="text" class="form-control" />
+          </div>
+
+          <div class="control">
+            <label class="form-label">Invitee:</label>
+            <input type="text" class="form-control" />
+          </div>
+
+          <div class="control">
+            <button type="button" class="btn btn-dark">Save task</button>
+          </div>
+        </div>
+      </section>
     </div>
-    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

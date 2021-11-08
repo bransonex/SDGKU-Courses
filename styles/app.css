@@ -1,0 +1,11 @@
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+#iImportant {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
